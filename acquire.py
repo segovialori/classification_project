@@ -19,8 +19,8 @@ def get_telco_data():
                         JOIN internet_service_types USING(`internet_service_type_id`)
                         JOIN contract_types USING(`contract_type_id`);
                     '''
-        df = pd.read_sql(sql_query, get_connection('telco_churn'))
-        df.to_csv('telco_churn.csv')
-    else:
+         df = pd.read_sql(sql_query, get_connection('telco_churn'))
+         df.to_csv('telco_churn.csv')
+     else:
         df = pd.read_csv('telco_churn.csv', index_col=0)
-    return df
+     return df
