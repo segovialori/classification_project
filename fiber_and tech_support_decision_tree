@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="contract <= 0.5\ngini = 0.39\nsamples = 3943\nvalue = [2897, 1046]", fillcolor="#eeae80"] ;
+1 [label="fiber <= 0.5\ngini = 0.487\nsamples = 2188\nvalue = [1269, 919]", fillcolor="#f8dcc8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="tenure_years <= 0.46\ngini = 0.394\nsamples = 999\nvalue = [729, 270]", fillcolor="#efb082"] ;
+1 -> 2 ;
+3 [label="gini = 0.483\nsamples = 415\nvalue = [246, 169]", fillcolor="#f7d8c1"] ;
+2 -> 3 ;
+4 [label="gini = 0.286\nsamples = 584\nvalue = [483, 101]", fillcolor="#ea9b62"] ;
+2 -> 4 ;
+5 [label="total_charges <= 1556.25\ngini = 0.496\nsamples = 1189\nvalue = [540, 649]", fillcolor="#deeffb"] ;
+1 -> 5 ;
+6 [label="gini = 0.431\nsamples = 618\nvalue = [194, 424]", fillcolor="#94caf1"] ;
+5 -> 6 ;
+7 [label="gini = 0.478\nsamples = 571\nvalue = [346, 225]", fillcolor="#f6d3ba"] ;
+5 -> 7 ;
+8 [label="contract <= 1.5\ngini = 0.134\nsamples = 1755\nvalue = [1628, 127]", fillcolor="#e78b48"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="streaming_movies <= 0.5\ngini = 0.217\nsamples = 833\nvalue = [730, 103]", fillcolor="#e99355"] ;
+8 -> 9 ;
+10 [label="gini = 0.11\nsamples = 462\nvalue = [435, 27]", fillcolor="#e78945"] ;
+9 -> 10 ;
+11 [label="gini = 0.326\nsamples = 371\nvalue = [295, 76]", fillcolor="#eca16c"] ;
+9 -> 11 ;
+12 [label="monthly_charges <= 93.55\ngini = 0.051\nsamples = 922\nvalue = [898, 24]", fillcolor="#e6843e"] ;
+8 -> 12 ;
+13 [label="gini = 0.023\nsamples = 699\nvalue = [691, 8]", fillcolor="#e5823b"] ;
+12 -> 13 ;
+14 [label="gini = 0.133\nsamples = 223\nvalue = [207, 16]", fillcolor="#e78b48"] ;
+12 -> 14 ;
+}

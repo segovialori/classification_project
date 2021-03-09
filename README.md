@@ -30,5 +30,3 @@ Data Dictionary:
 | total_charges         | Sum of all charges customer has incurred throughout lifetime of account                                                                    | float     |
 | churn                 | no = has not left company, yes = has left company                                                                                          | int       |
 | tenure                | number of months customer has been with company                                                                                            | float     |
-|                       |                                                                                                                                            |           |
-|                       |                                                                                                                                            |           |
