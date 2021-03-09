@@ -1,10 +1,21 @@
 # Let's Predict Churn!
   
-Project Description: 
+## Project Description: 
+### Goals 
 Customers are churning at an alarming rate at a telco company and they need our help finding out why!  Since it is more cost effective to keep our current customers, than recruit new ones, we will focus on determining what is driving our current customers away.  Our goal is to use machine learning to determine which customers have a higher probability of leaving us.  It is important to find which customers might leave us because by retaining our current customers we can increase our revenue.  
 
+### Background
+What is customer churn?
+> "Churn rate (sometimes called attrition rate), in its broadest sense, is a measure of the number of individuals or items moving out of a collective group over a specific period. It is one of two primary factors that determine the steady-state level of customers a business will support." [https://en.wikipedia.org/wiki/Churn_rate]
+> 
+### Deliverables
+1. Jupyter notebook report
+2. README.md file
+3. CSV file
+4. Individula modules, .py files
+5. Notebook presentation
 
-Data Dictionary:
+### Data Dictionary:
 
 | Feature               | Definition                                                                                                                                 | Data Type |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-----------|
@@ -30,3 +41,25 @@ Data Dictionary:
 | total_charges         | Sum of all charges customer has incurred throughout lifetime of account                                                                    | float     |
 | churn                 | no = has not left company, yes = has left company                                                                                          | int       |
 | tenure                | number of months customer has been with company                                                                                            | float     |
+
+## Hypotheses
+1. Hypothesis 1: Does having fiber internet have any effect on customer churn?
+2. Hypothesis 2: Does tech support have any effect on customer churn?
+
+## Project Planning
+### Acquire
+- get data from codeup database using sql
+### Prepare
+- clean and prep data with a function so that it is ready for exploration
+### Explore
+- visualize relationships features have with the target (churn)
+### Model
+- establish baseline and test against 3 different models
+### Conclusions
+- determine the best model and key takeaways
+
+## Reproduce
+### Steps
+1.  Fork or clone repo
+2.  Download all modules into working directory
+3.  Run the telco_churn_project notebook
